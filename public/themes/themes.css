@@ -1,15 +1,15 @@
 @tailwind base;
 @layer base {
   :root {
-    --color-text-base: 0, 0, 0;
-    --color-text-muted: 120, 120, 120;
-    --color-text-inverted: 255, 255, 255;
-    --color-fill: 245, 245, 245;
-    --muted: 200, 200, 200;
-    --color: 249, 115, 22;
-    --color-button-accent: 249, 115, 22;
-    --color-button-accent-hover: 55, 55, 55;
-    --color-button-muted: 244, 239, 238;
+      --color-text-base: 0, 0, 0;
+      --color-text-muted: 115, 115, 115;
+      --color-text-inverted: 255, 255, 255;
+      --color-fill: 245, 245, 245;
+      --muted: 205, 205, 205;
+      --color: 255, 45, 45;
+      --color-button-accent: 255, 45, 45;
+      --color-button-accent-hover: 60, 60, 60;
+      --color-button-muted: 244, 238, 238;
     [data-theme="blue"] {
       --color-text-base: 15, 23, 42;
       --color-text-muted: 100, 116, 139;
@@ -56,15 +56,15 @@
     }
   }
   .dark {
-    --color-text-base: 255, 255, 255;
-    --color-text-muted: 150, 150, 150;
-    --color-text-inverted: 255, 255, 255;
-    --color-fill: 18, 18, 18;
-    --muted: 36, 36, 36;
-    --color: 227, 77, 10;
-    --color-button-accent: 227, 77, 10;
-    --color-button-accent-hover: 231, 121, 43;
-    --color-button-muted: 26, 26, 26;
+      --color-text-base: 255, 255, 255;
+      --color-text-muted: 160, 160, 160;
+      --color-text-inverted: 255, 255, 255;
+      --color-fill: 15, 15, 15;
+      --muted: 32, 32, 32;
+      --color: 255, 45, 45;
+      --color-button-accent: 255, 45, 45;
+      --color-button-accent-hover: 255, 90, 90;
+      --color-button-muted: 22, 22, 22;
     [data-theme="blue"] {
       --color-text-base: 248, 250, 252;
       --color-text-muted: 148, 163, 184;
@@ -109,4 +109,5 @@
       --color-button-accent-hover: 0, 185, 255;
       --color-button-muted: 25, 81, 86;
     }
+}
 }

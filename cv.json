@@ -1,47 +1,42 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Junior Full Stack Developer",
+    "name": "Anas Uddin",
+    "label": "Software Engineer",
     "image": "/me_avatar.jpg",
-    "email": "john.doe@example.com",
-    "phone": "+1 555-555-5555",
-    "url": "https://johndoe.dev",
-    "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
+    "email": "anasuddin44@gmail.com",
+    "phone": "+358 449509309",
+    "url": "https://github.com/theanasuddin",
+    "summary": "Hi, I'm Anas Uddin — a software engineer and MSc Data Science student at Tampere University. I'm passionate about building elegant, scalable, and meaningful digital solutions. Over the past four years, I've worked on enterprise-level projects for clients in Finland and Japan, delivering high-performing, maintainable systems using Java, Spring Boot, Angular, and modern web technologies.\n\nBeyond code, I'm deeply interested in design, aesthetics, and how technology can blend function with form — whether it's crafting clean architectures, intuitive interfaces, or visually balanced experiences. My approach to software engineering is driven by problem-solving, precision, and continuous learning — from debugging legacy systems to optimizing data-driven solutions.\n\nI'm now expanding my expertise at the intersection of software engineering and data science, aiming to create intelligent, human-centered systems that not only work efficiently but also feel intuitively right.",
     "theme": "default",
     "location": {
       "address": "",
-      "postalCode": "10001",
-      "city": "Auckland",
-      "countryCode": "NZ",
-      "region": "New Zealand"
+      "postalCode": "33720",
+      "city": "Tampere",
+      "countryCode": "FI",
+      "region": "Finland"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "john-doe",
-        "url": "https://linkedin.com/in/john-doe"
-      },
-      {
-        "network": "X",
-        "username": "john-doe",
-        "url": "https://x.com/john-doe"
+        "username": "theanasuddin",
+        "url": "https://www.linkedin.com/in/theanasuddin"
       },
       {
         "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+        "username": "theanasuddin",
+        "url": "https://github.com/theanasuddin"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
-      "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
-      "endDate": null,
+      "name": "BJIT Ltd.",
+      "position": "Software Engineer",
+      "location_type": "On site (Full-time)",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://bjitgroup.com/",
+      "startDate": "2021-10-01",
+      "endDate": "2025-06-01",
       "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
       "highlights": [
         "Improved website performance by optimizing code"
