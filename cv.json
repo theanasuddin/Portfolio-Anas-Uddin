@@ -5,7 +5,8 @@
     "image": "/me_avatar.jpg",
     "email": "anasuddin44@gmail.com",
     "phone": "+358 449509309",
-    "url": "https://github.com/theanasuddin",
+    "url": "https://www.linkedin.com/in/theanasuddin",
+    "cv": "/anas_uddin_cv.pdf",
     "summary": "Hi, I'm Anas Uddin — a software engineer and MSc Data Science student at Tampere University. I'm passionate about building elegant, scalable, and meaningful digital solutions. Over the past four years, I've worked on enterprise-level projects for clients in Finland and Japan, delivering high-performing, maintainable systems using Java, Spring Boot, Angular, and modern web technologies.\n\nBeyond code, I'm deeply interested in design, aesthetics, and how technology can blend function with form — whether it's crafting clean architectures, intuitive interfaces, or visually balanced experiences. My approach to software engineering is driven by problem-solving, precision, and continuous learning — from debugging legacy systems to optimizing data-driven solutions.\n\nI'm now expanding my expertise at the intersection of software engineering and data science, aiming to create intelligent, human-centered systems that not only work efficiently but also feel intuitively right.",
     "theme": "default",
     "location": {
@@ -57,46 +58,40 @@
       ]
     },
     {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
+      "name": "DVL Denim Ltd.",
+      "position": "IT Executive",
+      "location_type": "Hybrid (Part-time)",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://denimventure-bd.com/",
+      "startDate": "2021-03-01",
+      "endDate": "2021-09-01",
+      "summary": "At DVL Denim Ltd., I contributed to the company's digital infrastructure by developing both hardware-based and web-based solutions. My role combined hands-on system building, network optimization, and web development to improve data accessibility and online presence.",
       "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
+        "Built a headless NAS server using Raspberry Pi, Samba, and Ubuntu Linux to enable centralized data storage and retrieval, while exploring computer networks, tools, and protocols to deliver effective networking solutions."
       ],
       "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
+        "Designed and deployed a headless NAS (Network-Attached Storage) server using Raspberry Pi, Samba, and Ubuntu, enabling centralized and reliable data storage and retrieval.",
+        "Explored and implemented networking tools and protocols to enhance system connectivity and optimize internal workflows.",
+        "Developed and maintained the company's official website, ensuring consistent performance, usability, and brand alignment."
       ],
       "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
+        "Successfully introduced a low-cost, scalable storage solution that streamlined data management and improved team collaboration.",
+        "Strengthened the company's digital presence through a functional, responsive, and easy-to-manage website.",
+        "Gained in-depth experience in network systems and server configuration, complementing my core software engineering expertise."
       ],
       "skills": [
-        "Python",
-        "Django",
-        "SQL",
-        "Git"
-      ]
-    },
-    {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
-      "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
-      "highlights": [
-        "Completed several client projects successfully"
-      ],
-      "skills": [
-        "HTML",
-        "CSS"
+        "Linux",
+        "Ubuntu",
+        "RaspberryPi",
+        "OS",
+        "Wordpress",
+        "MySQL",
+        "Server",
+        "DNS",
+        "Network",
+        "Photoshop",
+        "Illustrator",
+        "Figma"
       ]
     }
   ],
@@ -115,43 +110,64 @@
   ],
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
-      "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
-      ]
-    },
-    {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
+      "institution": "Tampere University",
+      "url": "https://www.tuni.fi/en",
+      "area": "M.Sc. in Data Science, Computing Sciences and Electrical Engineering, 25/120 ECTS",
       "studyType": "Master",
-      "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
+      "startDate": "2025-10-18",
+      "endDate": null,
+      "score": "",
       "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
+      ],
+      "location": "Tampere, Finland"
     },
     {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
+      "institution": "North South University",
+      "url": "https://www.northsouth.edu/",
+      "area": "B.Sc. in Computer Science and Engineering, CGPA: 3.56/4.00 (89%)",
+      "studyType": "Bachelor",
+      "startDate": "2015-05-01",
+      "endDate": "2021-02-01",
+      "score": "3.56",
       "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
-      ]
+      ],
+      "location": "Dhaka, Bangladesh"
+    },
+    {
+      "institution": "Milestone College",
+      "url": "https://www.milestonecollege.com/",
+      "area": "Higher Secondary School Certificate (Science), GPA: 5.00/5.00",
+      "studyType": "HSC",
+      "startDate": "2011-02-01",
+      "endDate": "2013-08-01",
+      "score": "5.00",
+      "courses": [
+      ],
+      "location": "Dhaka, Bangladesh"
+    },
+    {
+      "institution": "Nabinagar Govt. Pilot High School",
+      "url": "https://nabinagarghs.edu.bd/",
+      "area": "Secondary School Certificate (Science), GPA: 5.00/5.00",
+      "studyType": "SSC",
+      "startDate": "2009-02-01",
+      "endDate": "2011-01-01",
+      "score": "5.00",
+      "courses": [
+      ],
+      "location": "Brahmanbaria, Bangladesh"
+    },
+    {
+      "institution": "Kollol Kindergarten",
+      "url": "https://www.facebook.com/kollolkindergarten/",
+      "area": "Primary School Certificate",
+      "studyType": "Primary",
+      "startDate": "2001-02-01",
+      "endDate": "2006-01-01",
+      "score": "5.00",
+      "courses": [
+      ],
+      "location": "Brahmanbaria, Bangladesh"
     }
   ],
   "certificates": [

@@ -8,9 +8,10 @@ import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
 import Flag from "@/icons/Flag.astro";
 import MapMarker from "@/icons/MapMarker.astro";
+import CV from "@/icons/CV.astro";
 import type { SocialIcon } from "@/types";
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles, phone, email, cv } = basics;
 const { city, region, nationality } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
@@ -79,6 +80,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 							</a>
 						);
 					})
+				}
+				{
+					cv && (
+						<a href={cv} download title={`Download ${name} CV`} target="_blank" rel="noopener noreferrer">
+							<CV />
+						</a>
+					)
 				}
 				<div class="no-print footer-button max-sm:hidden group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted [&>span]:hover:text-skin-inverted">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6 icon-tabler icon-tabler-command"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
