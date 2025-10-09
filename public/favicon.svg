@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="16" height="16">
-    <style>
-        path { fill: #E34D0A; }
-        @media (prefers-color-scheme: dark) {
-            path { fill: #F7CC16; }
-        }
-    </style>
-    <path d="M5.02697 12L2.59326 9.54931L4.10859 7.97716L7.71323 11.5838L7.32292 12H5.02697Z"/>
-    <path d="M5.02697 4L2.59326 6.45069L4.10859 8.02284L7.71323 4.41616L7.32292 4H5.02697Z"/>
-    <path d="M11.3109 12L13.7446 9.54931L12.2293 7.97716L8.62466 11.5838L9.01497 12H11.3109Z"/>
-    <path d="M11.3109 4L13.7446 6.45069L12.2293 8.02284L8.62466 4.41616L9.01497 4H11.3109Z"/>
-</svg>
-
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.84 9.04"><title>favicon</title><path d="M5.79,10.48H2.57L2,12.32H0L3.32,3.4H5l3.34,8.92H6.41ZM3.06,9H5.29L4.17,5.65Z" transform="translate(0 -3.4)" fill="#ef3734"/><path d="M15.84,3.4V9.27a3,3,0,0,1-.92,2.32,3.51,3.51,0,0,1-2.5.85,3.57,3.57,0,0,1-2.48-.83A3,3,0,0,1,9,9.34V3.4h1.84V9.29a1.67,1.67,0,0,0,.42,1.27,1.6,1.6,0,0,0,1.16.4c1,0,1.56-.54,1.58-1.63V3.4Z" transform="translate(0 -3.4)" fill="#ef3734"/></svg>

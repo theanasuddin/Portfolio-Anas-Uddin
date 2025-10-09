@@ -1,0 +1,28 @@
+---
+import Section from "../Section.astro";
+import Language from "@/icons/Language.astro";
+import { languages } from "@cv";
+
+const SKILLS_ICONS: Record<string, any> = {
+  Language
+};
+---
+
+<Section className={Astro.props.className} title="Language Skills">
+  <ul
+    class="inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li>svg]:text-skin-hue [&>li]:text-sm"
+  >
+    {
+      languages.map(({ language, fluency }) => {
+        const iconName = language === "Next.js" ? "Next" : language;
+        const Icon = SKILLS_ICONS["Language"];
+
+        return (
+          <li class="border-skin-hue/20s bg-skin-button-accent/20s borders border-solids flex items-center gap-1 rounded-md px-2 py-0.5 text-xs text-skin-muted print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
+            {Icon && <Icon />} <span>{language} ({fluency})</span>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>

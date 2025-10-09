@@ -134,7 +134,6 @@ interface Projects {
 
 interface Interests {
   name: string;
-  keywords: Array<string>;
 }
 
 interface References {

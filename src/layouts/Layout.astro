@@ -1,6 +1,6 @@
 ---
 import { basics } from "@cv";
-import Vengeance from "@/layouts/Vengeance.astro";
+import Anas from "@/layouts/Anas.astro";
 
 interface Props {
 	title: string;
@@ -27,17 +27,17 @@ const { image, summary, url, theme } = basics;
 		<meta property="og:description" content={summary} />
 		<meta property="og:image" content="" />
 
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
-		<meta property="twitter:url" content={url} />
-		<meta name="twitter:title" content={title} />
-		<meta name="twitter:description" content={summary} />
-		<meta name="twitter:image" content="" />
+		<meta name="linkedin:card" content="summary_large_image" />
+		<meta property="linkedin:domain" content={url.split("//")[1] ?? ""} />
+		<meta property="linkedin:url" content={url} />
+		<meta name="linkedin:title" content={title} />
+		<meta name="linkedin:description" content={summary} />
+		<meta name="linkedin:image" content="" />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim" />
 
 		<link rel="stylesheet" href="/themes/themes.css" />
-		<Vengeance />
+		<Anas />
 	</head>
 	<body data-theme={theme} class="relative bg-skin-fill">
 		<div class="absolute top-0 -z-10 h-full w-full print:hidden">

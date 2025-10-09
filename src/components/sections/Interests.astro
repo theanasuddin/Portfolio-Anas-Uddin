@@ -1,0 +1,60 @@
+---
+import Section from "../Section.astro";
+import Style from "@/icons/Style.astro";
+import Study from "@/icons/Study.astro";
+import Programming from "@/icons/Programming.astro";
+import Nutrition from "@/icons/Nutrition.astro";
+import Music from "@/icons/Music.astro";
+import Fitness from "@/icons/Fitness.astro";
+import Design from "@/icons/Design.astro";
+import Aesthetics from "@/icons/Aesthetics.astro";
+import Technology from "@/icons/Technology.astro";
+import Photography from "@/icons/Lens.astro";
+import { interests } from "@cv";
+
+const INTERESTS_ICONS: Record<string, any> = {
+  Style,
+  Study,
+  Programming,
+  Nutrition,
+  Music,
+  Fitness,
+  Design,
+  Aesthetics,
+  Technology,
+  Photography,
+};
+
+const INTERESTS_LABELS: Record<string, string> = {
+  Style: "Style",
+  Study: "Study",
+  Programming: "Programming",
+  Nutrition: "Nutrition",
+  Music: "Music",
+  Fitness: "Health & Fitness",
+  Design: "Design",
+  Aesthetics: "Aesthetics",
+  Technology: "Technology",
+  Photography: "Photography",
+};
+---
+
+<Section className={Astro.props.className} title="Interests">
+  <ul
+    class="inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li>svg]:text-skin-hue [&>li]:text-sm"
+  >
+    {
+      interests.map(({ name }) => {
+        const iconName = name === "Next.js" ? "Next" : name;
+        const Icon = INTERESTS_ICONS[iconName];
+        name = INTERESTS_LABELS[iconName];
+
+        return (
+          <li class="border-skin-hue/20s bg-skin-button-accent/20s borders border-solids flex items-center gap-1 rounded-md px-2 py-0.5 text-xs text-skin-muted print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
+            {Icon && <Icon />} <span>{name}</span>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>
