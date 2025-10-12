@@ -406,7 +406,8 @@
       "highlights": [
         "Built with: Java, Spring Boot, Angular, MariaDB, RabbitMQ, JasperReports, LaunchDarkly, Snowplow"
       ],
-      "url": "https://www.fikuro.fi/"
+      "url": "https://www.fikuro.fi/",
+      "github": ""
     },
     {
       "name": "Mealkun",
@@ -415,7 +416,8 @@
       "highlights": [
         "Built with: Java, Spring Boot, Angular, PostgreSQL, JasperReports, PowerBuilder"
       ],
-      "url": "https://mealkun.jp/"
+      "url": "https://mealkun.jp/",
+      "github": ""
     },
     {
       "name": "RIMS",
@@ -424,7 +426,8 @@
       "highlights": [
         "Built with: Java, Spring Boot, Angular, PostgreSQL, JasperReports, PowerBuilder"
       ],
-      "url": "https://www.shinetsu.co.jp/en/"
+      "url": "https://www.shinetsu.co.jp/en/",
+      "github": ""
     }
   ],
   "academicProjects": [
