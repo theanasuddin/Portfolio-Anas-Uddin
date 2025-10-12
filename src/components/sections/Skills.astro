@@ -1,51 +1,169 @@
 ---
 import Section from "../Section.astro";
-import HTML from "@/icons/html.astro";
-import CSS from "@/icons/css.astro";
-import JavaScript from "@/icons/javascript.astro";
-import TypeScript from "@/icons/type.astro";
-import React from "@/icons/react.astro";
-import Node from "@/icons/node.astro";
-import MySQL from "@/icons/sql.astro";
-import Git from "@/icons/git.astro";
-import GitHub from "@/icons/GitHub.astro";
-import Tailwind from "@/icons/tailwind.astro";
-import Next from "@/icons/next.astro";
+import { skillPoints } from "@cv";
 import { skills } from "@cv";
-import Swift from "@/icons/swift.astro";
-import SwiftUI from "@/icons/swiftui.astro";
-import Kotlin from "@/icons/kotlin.astro";
-import Flutter from "@/icons/flutter.astro";
-import Figma from "@/icons/Figma.astro";
-import Gitlab from "@/icons/Gitlab.astro";
+import HTML from "@/icons/html.astro"
+import CSS from "@/icons/css.astro"
+import JavaScript from "@/icons/javascript.astro"
+import TypeScript from "@/icons/type.astro"
+import React from "@/icons/react.astro"
+import Node from "@/icons/node.astro"
+import MySQL from "@/icons/sql.astro"
+import Git from "@/icons/git.astro"
+import GitHub from "@/icons/GitHub.astro"
+import Tailwind from "@/icons/tailwind.astro"
+import Next from "@/icons/next.astro"
+import Swift from "@/icons/swift.astro"
+import SwiftUI from "@/icons/swiftui.astro"
+import Kotlin from "@/icons/kotlin.astro"
+import Flutter from "@/icons/flutter.astro"
+import Linux from "@/icons/Linux.astro"
+import Ubuntu from "@/icons/Ubuntu.astro"
+import RaspberryPi from "@/icons/RaspberryPi.astro"
+import OS from "@/icons/OS.astro"
+import Wordpress from "@/icons/Wordpress.astro"
+import Server from "@/icons/Server.astro"
+import DNS from "@/icons/DNS.astro"
+import Network from "@/icons/ComputerNetwork.astro"
+
+import Photoshop from "@/icons/Photoshop.astro"
+import Illustrator from "@/icons/Illustrator.astro"
+import Figma from "@/icons/Figma.astro"
+import Java from "@/icons/Java.astro"
+import Jira from "@/icons/Jira.astro";
+import Confluence from "@/icons/Confluence.astro";
+import Markdown from "@/icons/Markdown.astro";
+import Gerrit from "@/icons/Gerrit.astro";
+import RabbitMQ from "@/icons/RabbitMQ.astro";
+import JasperReports from "@/icons/JasperReports.astro";
+import MariaDB from "@/icons/MariaDB.astro";
+import PostgreSQL from "@/icons/PostgreSQL.astro";
+import PowerBuilder from "@/icons/PowerBuilder.astro";
+import SQL from "@/icons/SQLFile.astro";
+import Angular from "@/icons/Angular.astro";
+import SpringFramework from "@/icons/SpringFramework.astro";
+import C from "@/icons/C.astro";
+import Python from "@/icons/Python.astro";
+import Processing from "@/icons/Processing.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
-	HTML,
-	CSS,
-	JavaScript,
-	TypeScript,
-	React,
-	Node,
-	MySQL,
-	Git,
-	GitHub,
-	Next,
-	Tailwind,
-	Swift,
-	SwiftUI,
-	Kotlin,
-	Flutter,
-	Figma,
-	Gitlab,
-};
+  HTML,
+  CSS,
+  JavaScript,
+  TypeScript,
+  React,
+  Node,
+  MySQL,
+  Git,
+  GitHub,
+  Next,
+  Tailwind,
+  Swift,
+  SwiftUI,
+  Kotlin,
+  Flutter,
+  Linux,
+  Ubuntu,
+  RaspberryPi,
+  OS,
+  Wordpress,
+  Server,
+  DNS,
+  Network,
+  Photoshop,
+  Illustrator,
+  Figma,
+  Java,
+  Jira,
+  Confluence,
+  Markdown,
+  Gerrit,
+  RabbitMQ,
+  JasperReports,
+  MariaDB,
+  PostgreSQL,
+  PowerBuilder,
+  SQL,
+  Angular,
+  SpringFramework,
+	C,
+	Python,
+	Processing
+}
+
+const SKILL_LABELS: Record<string, string> = {
+  HTML: "HTML",
+  CSS: "CSS",
+  JavaScript: "JavaScript",
+  TypeScript: "TypeScript",
+  React: "React",
+  Node: "Node",
+  MySQL: "MySQL",
+  Git: "Git",
+  GitHub: "GitHub",
+  Next: "Next",
+  Tailwind: "Tailwind",
+  Swift: "Swift",
+  SwiftUI: "SwiftUI",
+  Kotlin: "Kotlin",
+  Flutter: "Flutter",
+  Linux: "Linux",
+  Ubuntu: "Ubuntu",
+  RaspberryPi: "Raspberry Pi",
+  OS: "OS",
+  Wordpress: "Wordpress",
+  Server: "Server",
+  DNS: "DNS",
+  Network: "Network",
+  Photoshop: "Photoshop",
+  Illustrator: "Illustrator",
+  Figma: "Figma",
+  Java: "Java",
+  Jira: "Jira",
+  Confluence: "Confluence",
+  Markdown: "Markdown",
+  Gerrit: "Gerrit",
+  RabbitMQ: "RabbitMQ",
+  JasperReports: "JasperReports",
+  MariaDB: "MariaDB",
+  PostgreSQL: "PostgreSQL",
+  PowerBuilder: "PowerBuilder",
+  SQL: "SQL",
+  Angular: "Angular",
+  SpringFramework: "Spring",
+	C: "C",
+  Python: "Python",
+	Processing: "Processing"
+}
 ---
 
 <Section className={Astro.props.className} title="Technical Skills">
+	{skillPoints && (
+    <div class="flex flex-col gap-1 mb-3 text-sm" x-data="{ expanded: false }">
+      <h4>Tools, Frameworks & Strengths:</h4>
+      
+      <div class="ml-4 text-sm md:after:from-skin-hue dark:md:after:to-skin-hue/0 flex relative flex-col gap-2 max-sm:!h-auto print:!h-auto md:after:bg-gradient-to-t md:after:absolute md:after:bottom-0 md:after:w-full print:after:hidden md:after:h-12 md:after:content-['']" :class="expanded ? 'after:hidden' : ''" x-show="expanded" x-collapse.min.50px>
+        <ul class="text-skin-muted marker:text-skin-hue [&>li]:ml-4 flex list-disc flex-col gap-2 [&>li>a]:text-skin-hue [&>li>a:hover]:text-skin-hue/80">
+          {skillPoints.map(point => (
+            <li set:html={point}></li>
+          ))}
+        </ul>
+      </div>
+
+      <button @click="expanded = !expanded" class="print:hidden group/more w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-muted transition-all hover:text-skin-base flex mt-1 ml-4">
+        <span x-text="expanded ? 'Show less' : 'Show more'">Show more</span>
+        <svg class="w-4 h-4 group-hover/more:translate-y-0.5 duration-200 ease-out" :class="{ 'rotate-180': expanded }" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    </div>
+  )}
 	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
 		{
 			skills.map(({ name }) => {
 				const iconName = name === "Next.js" ? "Next" : name;
 				const Icon = SKILLS_ICONS[iconName];
+				name = SKILL_LABELS[iconName]
 
 				return (
 					<li class="border-skin-hue/20s bg-skin-button-accent/20s borders border-solids flex items-center gap-1 rounded-md px-2 py-0.5 text-xs text-skin-muted print:border-none print:bg-transparent print:p-0 print:text-zinc-800">

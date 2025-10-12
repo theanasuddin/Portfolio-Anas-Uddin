@@ -29,6 +29,19 @@ import Network from "@/icons/ComputerNetwork.astro"
 import Photoshop from "@/icons/Photoshop.astro"
 import Illustrator from "@/icons/Illustrator.astro"
 import Figma from "@/icons/Figma.astro"
+import Java from "@/icons/Java.astro"
+import Jira from "@/icons/Jira.astro";
+import Confluence from "@/icons/Confluence.astro";
+import Markdown from "@/icons/Markdown.astro";
+import Gerrit from "@/icons/Gerrit.astro";
+import RabbitMQ from "@/icons/RabbitMQ.astro";
+import JasperReports from "@/icons/JasperReports.astro";
+import MariaDB from "@/icons/MariaDB.astro";
+import PostgreSQL from "@/icons/PostgreSQL.astro";
+import PowerBuilder from "@/icons/PowerBuilder.astro";
+import SQL from "@/icons/SQLFile.astro";
+import Angular from "@/icons/Angular.astro";
+import SpringFramework from "@/icons/SpringFramework.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -56,7 +69,62 @@ const SKILLS_ICONS: Record<string, any> = {
   Network,
   Photoshop,
   Illustrator,
-  Figma
+  Figma,
+  Java,
+  Jira,
+  Confluence,
+  Markdown,
+  Gerrit,
+  RabbitMQ,
+  JasperReports,
+  MariaDB,
+  PostgreSQL,
+  PowerBuilder,
+  SQL,
+  Angular,
+  SpringFramework,
+}
+
+const SKILL_LABELS: Record<string, string> = {
+  HTML: "HTML",
+  CSS: "CSS",
+  JavaScript: "JavaScript",
+  TypeScript: "TypeScript",
+  React: "React",
+  Node: "Node",
+  MySQL: "MySQL",
+  Git: "Git",
+  GitHub: "GitHub",
+  Next: "Next",
+  Tailwind: "Tailwind",
+  Swift: "Swift",
+  SwiftUI: "SwiftUI",
+  Kotlin: "Kotlin",
+  Flutter: "Flutter",
+  Linux: "Linux",
+  Ubuntu: "Ubuntu",
+  RaspberryPi: "Raspberry Pi",
+  OS: "OS",
+  Wordpress: "Wordpress",
+  Server: "Server",
+  DNS: "DNS",
+  Network: "Network",
+  Photoshop: "Photoshop",
+  Illustrator: "Illustrator",
+  Figma: "Figma",
+  Java: "Java",
+  Jira: "Jira",
+  Confluence: "Confluence",
+  Markdown: "Markdown",
+  Gerrit: "Gerrit",
+  RabbitMQ: "RabbitMQ",
+  JasperReports: "JasperReports",
+  MariaDB: "MariaDB",
+  PostgreSQL: "PostgreSQL",
+  PowerBuilder: "PowerBuilder",
+  SQL: "SQL",
+  Angular: "Angular",
+  SpringFramework: "Spring"
 }
 ---
 <Section className={Astro.props.className} title="Experience">
@@ -125,9 +193,9 @@ const SKILLS_ICONS: Record<string, any> = {
                 {responsibilities && (
                   <div class="flex flex-col gap-1">
                     <h4>Responsibilities:</h4>
-                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2 [&>li>a]:text-skin-hue [&>li>a:hover]:text-skin-hue/80">
                       {responsibilities.map(responsibility => (
-                        <li>{responsibility}</li>
+                        <li set:html={responsibility}></li>
                       ))}
                     </ul>
                   </div>
@@ -136,9 +204,9 @@ const SKILLS_ICONS: Record<string, any> = {
                 {achievements && (
                   <div class="flex flex-col gap-1">
                     <h4>Achievements:</h4>
-                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2 [&>li>a]:text-skin-hue [&>li>a:hover]:text-skin-hue/80">
                       {achievements.map(achievement => (
-                        <li>{achievement}</li>
+                        <li set:html={achievement}></li>
                       ))}
                     </ul>
                   </div>
@@ -155,6 +223,7 @@ const SKILLS_ICONS: Record<string, any> = {
                   {skills && skills.map(skill => {
                     const iconName = skill === "Next.js" ? "Next" : skill
                     const Icon = SKILLS_ICONS[iconName]
+                    skill = SKILL_LABELS[iconName]
                     return (
                       <li class="bg-skin-button-accent/20 border-skin-hue/20 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs">
                         {Icon && <Icon />} <span>{skill}</span>

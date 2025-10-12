@@ -7,7 +7,7 @@
     "phone": "+358 449509309",
     "url": "https://www.linkedin.com/in/theanasuddin",
     "cv": "/anas_uddin_cv.pdf",
-    "summary": "Hi, I'm Anas Uddin — a software engineer and MSc Data Science student at Tampere University. I'm passionate about building elegant, scalable, and meaningful digital solutions. Over the past four years, I've worked on enterprise-level projects for clients in Finland and Japan, delivering high-performing, maintainable systems using Java, Spring Boot, Angular, and modern web technologies.\n\nBeyond code, I'm deeply interested in design, aesthetics, and how technology can blend function with form — whether it's crafting clean architectures, intuitive interfaces, or visually balanced experiences. My approach to software engineering is driven by problem-solving, precision, and continuous learning — from debugging legacy systems to optimizing data-driven solutions.\n\nI'm now expanding my expertise at the intersection of software engineering and data science, aiming to create intelligent, human-centered systems that not only work efficiently but also feel intuitively right.",
+    "summary": "Hi, I'm Anas Uddin, a software engineer and MSc Data Science student at Tampere University. I'm passionate about building elegant, scalable, and meaningful digital solutions. Over the past four years, I've worked on enterprise-level projects for clients in Finland and Japan, delivering high-performing, maintainable systems using Java, Spring Boot, Angular, and modern web technologies.\n\nBeyond code, I'm deeply interested in design, aesthetics, and how technology can blend function with form, whether it's crafting clean architectures, intuitive interfaces, or visually balanced experiences. My approach to software engineering is driven by problem-solving, precision, and continuous learning, from debugging legacy systems to optimizing data-driven solutions.\n\nI'm now expanding my expertise at the intersection of software engineering and data science, aiming to create intelligent, human-centered systems that not only work efficiently but also feel intuitively right.",
     "theme": "default",
     "location": {
       "address": "",
@@ -39,17 +39,41 @@
       "url": "https://bjitgroup.com/",
       "startDate": "2021-10-01",
       "endDate": "2025-06-01",
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
-      "highlights": ["Improved website performance by optimizing code"],
+      "summary": "As a full-stack software engineer at BJIT, I contributed to large-scale international projects for clients in Finland and Japan, focusing on ERP, education, and laboratory management systems. I specialized in system modernization, full-stack feature delivery, and building maintainable, scalable enterprise solutions using Java Spring Boot and Angular.",
+      "highlights": [
+        "As a full-stack software engineer at BJIT, I contributed to large-scale international projects for clients in Finland and Japan, focusing on ERP, education, and laboratory management systems. I specialized in system modernization, full-stack feature delivery, and building maintainable, scalable enterprise solutions using Java Spring Boot and Angular."
+      ],
       "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
+        "Delivered end-to-end features and enhancements for enterprise-grade applications under <a href='https://www.visma.fi/' target='_blank' rel='noopener noreferrer'>Visma Finland</a>, <a href='https://www.gcc.co.jp/' target='_blank' rel='noopener noreferrer'>GCC Corporation</a>, and <a href='https://www.shinetsu.co.jp/en/' target='_blank' rel='noopener noreferrer'>Shin-Etsu Chemical</a>.",
+        "Designed and implemented RESTful APIs, ensured seamless backend-frontend integration, and developed reporting modules.",
+        "Migrated legacy PowerBuilder systems into modern Java Spring Boot-based architectures, improving performance and maintainability.",
+        "Collaborated with cross-cultural Agile/Scrum teams throughout the full SDLC across Finland and Japan, actively participating in code reviews, documentation, and CI/CD workflows.",
+        "Optimized system performance and data handling in both microservices (<a href='https://www.fikuro.fi/' target='_blank' rel='noopener noreferrer'>Fikuro ERP</a>) and monolithic (<a href='https://mealkun.jp/' target='_blank' rel='noopener noreferrer'>Mealkun</a>, RIMS) architectures."
       ],
       "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
+        "Successfully delivered critical modules for <a href='https://www.fikuro.fi/' target='_blank' rel='noopener noreferrer'>Fikuro ERP</a>, a high-performance ERP platform for Finnish manufacturing SMEs under <a href='https://www.visma.fi/' target='_blank' rel='noopener noreferrer'>Visma Finland</a>.",
+        "Migrated and modernized the <a href='https://mealkun.jp/' target='_blank' rel='noopener noreferrer'>Mealkun</a> meal management system used by schools across Japan, improving system reliability and user experience.",
+        "Led reporting and API migration efforts for RIMS, a chemical management system by <a href='https://www.shinetsu.co.jp/en/' target='_blank' rel='noopener noreferrer'>Shin-Etsu Chemical</a>, ensuring accurate data handling and modern compliance.",
+        "Contributed to international collaboration success, bridging communication and technical standards between Finnish and Japanese teams.",
+        "Maintained consistent on-time feature delivery and upheld high code quality standards through rigorous testing and peer reviews."
       ],
-      "skills": ["React", "Tailwind", "GitHub"]
+      "skills": [
+        "Java",
+        "SpringFramework",
+        "Angular",
+        "SQL",
+        "PowerBuilder",
+        "PostgreSQL",
+        "MariaDB",
+        "JasperReports",
+        "RabbitMQ",
+        "Git",
+        "GitHub",
+        "Gerrit",
+        "Jira",
+        "Confluence",
+        "Markdown"
+      ]
     },
     {
       "name": "DVL Denim Ltd.",
@@ -185,7 +209,7 @@
     {
       "name": "Best Performer of the Year",
       "date": "2024-06-01",
-      "issuer": "Awarded “Best Performer of the Year” (2023–2024) for outstanding professional contribution at BJIT Ltd.",
+      "issuer": "Awarded “Best Performer of the Year” (2023-2024) for outstanding professional contribution at BJIT Ltd.",
       "url": "https://tinyurl.com/cvbfdr3e"
     },
     {
@@ -225,87 +249,117 @@
       "url": "https://ielts.org/take-a-test/test-types/ielts-academic-test"
     }
   ],
+  "skillPoints": [
+    "Programming & Backend: Java, Spring Framework (Spring Boot, Spring Data, Spring Security), Python, C",
+    "Frontend & Web: HTML, CSS, JavaScript, TypeScript, Angular",
+    "Databases & Reporting: MariaDB, PostgreSQL, SQL, JasperReports",
+    "Messaging & Integration: RabbitMQ",
+    "Legacy Systems & Migration: PowerBuilder → modern Java web stack.",
+    "Version Control & Project Management: Git, Jira",
+    "Documentation & Collaboration: Confluence, Markdown",
+    "Visual Arts: Processing",
+    "Strengths: Problem-solving, clean coding, modular design, debugging, and delivering maintainable solutions."
+  ],
   "skills": [
     {
-      "name": "Figma",
-      "level": "Expert",
-      "keywords": ["Design", "UI"]
+      "name": "Java",
+      "level": "",
+      "keywords": ["", ""]
     },
     {
-      "name": "Gitlab",
-      "level": "Intermediate",
-      "keywords": ["Version Control", "Collaboration", "Source Code"]
+      "name": "SpringFramework",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "C",
+      "level": "",
+      "keywords": ["", ""]
     },
     {
       "name": "HTML",
-      "level": "Intermediate",
-      "keywords": ["Web Development", "Frontend"]
+      "level": "",
+      "keywords": ["", ""]
     },
     {
       "name": "CSS",
-      "level": "Intermediate",
-      "keywords": ["Web Development", "Frontend", "Responsive Design"]
+      "level": "",
+      "keywords": ["", ""]
     },
     {
       "name": "JavaScript",
-      "level": "Intermediate",
-      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
-    },
-    {
-      "name": "Tailwind",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
+      "level": "",
+      "keywords": ["", ""]
     },
     {
       "name": "TypeScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
+      "level": "",
+      "keywords": ["", ""]
     },
     {
-      "name": "Node",
-      "level": "Intermediate",
-      "keywords": ["Web Development", "Backend", "JavaScript", "Server"]
+      "name": "Angular",
+      "level": "",
+      "keywords": ["", ""]
     },
     {
-      "name": "MySQL",
-      "level": "Intermediate",
-      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
+      "name": "MariaDB",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "JasperReports",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "RabbitMQ",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "PowerBuilder",
+      "level": "",
+      "keywords": ["", ""]
     },
     {
       "name": "Git",
-      "level": "Intermediate",
-      "keywords": ["Version Control", "Collaboration", "Source Code"]
+      "level": "",
+      "keywords": ["", ""]
     },
     {
-      "name": "GitHub",
-      "level": "Intermediate",
-      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
+      "name": "Jira",
+      "level": "",
+      "keywords": ["", ""]
     },
     {
-      "name": "Next.js",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
+      "name": "Confluence",
+      "level": "",
+      "keywords": ["", ""]
     },
     {
-      "name": "React",
-      "level": "Intermediate",
-      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
+      "name": "Markdown",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "Processing",
+      "level": "",
+      "keywords": ["", ""]
     }
   ],
   "languages": [
@@ -346,46 +400,74 @@
   ],
   "projects": [
     {
-      "name": "Personal Portfolio",
-      "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
-      ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Weather App",
+      "name": "Fikuro",
       "isActive": true,
-      "description": "A web application that provides weather information for any location.",
+      "description": "Delivered full-stack features for a robust ERP, enabling scalable operations and real-time reporting for SMEs.",
       "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
-        "Responsive design"
+        "Built with: Java, Spring Boot, Angular, MariaDB, RabbitMQ, JasperReports, LaunchDarkly, Snowplow"
       ],
-      "url": "https://weatherapp.com"
+      "url": "https://www.fikuro.fi/"
     },
     {
-      "name": "Task Manager",
+      "name": "Mealkun",
       "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
+      "description": "Migrated legacy system to modern web stack and added reporting features to streamline school meal management.",
       "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
+        "Built with: Java, Spring Boot, Angular, PostgreSQL, JasperReports, PowerBuilder"
       ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
+      "url": "https://mealkun.jp/"
     },
     {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
+      "name": "RIMS",
+      "isActive": true,
+      "description": "Migrated a legacy PowerBuilder-based laboratory chemical management system to a modern web platform, enhancing usability, maintainability, and operational efficiency for chemical labs in Japan.",
       "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
+        "Built with: Java, Spring Boot, Angular, PostgreSQL, JasperReports, PowerBuilder"
       ],
-      "url": "https://ecommerce.com"
+      "url": "https://www.shinetsu.co.jp/en/"
+    }
+  ],
+  "academicProjects": [
+    {
+      "name": "typeRage",
+      "isActive": true,
+      "description": "Developed a web-based speed typing game consisting of 3 difficulty levels with a modern UI using web technologies to help players improve their typing speed and master the keyboard through fun, hosted on GitHub Pages.",
+      "highlights": [
+        "Built with: HTML, CSS, Bootstrap, JavaScript, jQuery"
+      ],
+      "url": "https://theanasuddin.github.io/typeRage/",
+      "github": "https://github.com/theanasuddin/typeRage"
+    },
+    {
+      "name": "Game AI Agent",
+      "isActive": false,
+      "description": "Implemented a game AI agent using Deep reinforcement learning (deep RL) that learns how to play games from the environment with visionary input, trained with 50,000 episodes, good for single-player 2D games like Snake, Cartpole, etc.",
+      "highlights": [
+        "Built with: Python, PyGame"
+      ],
+      "url": ""
+    }
+  ],
+  "personalProjects": [
+    {
+      "name": "Yahtzee™",
+      "isActive": true,
+      "description": "Implemented a complete and self-contained single-player version of the classic probability dice game YahtzeeTM with Processing and OpenGL API, which allows the player to score for all 13 rounds found in the actual physical game.",
+      "highlights": [
+        "Built with: Processing, OpenGL"
+      ],
+      "url": "https://github.com/theanasuddin/Simplified-Version-of-Yahtzee/releases/tag/v1.0",
+      "github": "https://github.com/theanasuddin/Simplified-Version-of-Yahtzee"
+    },
+    {
+      "name": "Stationary Shop Management",
+      "isActive": true,
+      "description": "Wrote a stationary shop management system with Java and Swing GUI widget toolkit API following Object-oriented programming (OOP) techniques that can help shopkeepers keep records of their product stocks by product enlisting, report viewing, keeping track of product purchase, sales to customers, etc.",
+      "highlights": [
+        "Built with: Java, Swing API, Apache Ant"
+      ],
+      "url": "https://cutt.ly/rmkKuOs",
+      "github": "https://github.com/theanasuddin/Stationary-Shop-Management"
     }
   ]
 }
