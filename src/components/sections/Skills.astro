@@ -46,6 +46,12 @@ import C from "@/icons/C.astro";
 import Python from "@/icons/Python.astro";
 import Processing from "@/icons/Processing.astro";
 
+import IntelliJIDEA from "@/icons/IntelliJIDEA.astro";
+import Docker from "@/icons/Docker.astro";
+import Jenkins from "@/icons/Jenkins.astro";
+import VSCode from "@/icons/VSCode.astro";
+import Postman from "@/icons/Postman.astro";
+
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
   CSS,
@@ -88,7 +94,12 @@ const SKILLS_ICONS: Record<string, any> = {
   SpringFramework,
 	C,
 	Python,
-	Processing
+	Processing,
+  IntelliJIDEA,
+  Docker,
+  Jenkins,
+  VSCode, 
+  Postman
 }
 
 const SKILL_LABELS: Record<string, string> = {
@@ -133,14 +144,19 @@ const SKILL_LABELS: Record<string, string> = {
   SpringFramework: "Spring",
 	C: "C",
   Python: "Python",
-	Processing: "Processing"
+	Processing: "Processing",
+  IntelliJIDEA: "IntelliJ IDEA",
+  Docker: "Docker",
+  Jenkins: "Jenkins",
+  VSCode: "VS Code", 
+  Postman: "Postman"
 }
 ---
 
 <Section className={Astro.props.className} title="Technical Skills">
 	{skillPoints && (
-    <div class="flex flex-col gap-1 mb-3 text-sm" x-data="{ expanded: false }">
-      <h4>Tools, Frameworks & Strengths:</h4>
+    <div class="flex flex-col gap-1 mb-3 text-md" x-data="{ expanded: false }">
+      <h4>Tools, Frameworks & Strengths</h4>
       
       <div class="ml-4 text-sm md:after:from-skin-hue dark:md:after:to-skin-hue/0 flex relative flex-col gap-2 max-sm:!h-auto print:!h-auto md:after:bg-gradient-to-t md:after:absolute md:after:bottom-0 md:after:w-full print:after:hidden md:after:h-12 md:after:content-['']" :class="expanded ? 'after:hidden' : ''" x-show="expanded" x-collapse.min.50px>
         <ul class="text-skin-muted marker:text-skin-hue [&>li]:ml-4 flex list-disc flex-col gap-2 [&>li>a]:text-skin-hue [&>li>a:hover]:text-skin-hue/80">

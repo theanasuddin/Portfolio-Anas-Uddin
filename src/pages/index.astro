@@ -8,7 +8,6 @@ import Experience from "@/components/sections/Experience.astro";
 import VolunteerExperience from "@/components/sections/VolunteerExperience.astro";
 import Hero from "@/components/sections/Hero.astro";
 import Projects from "@/components/sections/Projects.astro";
-import AcademicProjects from "@/components/sections/AcademicProjects.astro";
 import Skills from "@/components/sections/Skills.astro";
 import LanguageSkills from "@/components/sections/LanguageSkills.astro";
 import Tail from "@/components/sections/Tail.astro";
@@ -16,7 +15,6 @@ import KeyboardManager from "@/components/KeyboardManager.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
 
 import { basics } from "@cv";
-import PersonalProjects from "@/components/sections/PersonalProjects.astro";
 const { name, label } = basics;
 ---
 
@@ -29,13 +27,11 @@ const { name, label } = basics;
 		</div>
 		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
 			<Experience className="print:col-span-3" />
-			<VolunteerExperience className="print:col-span-3" />
 			<Projects className="print:hidden" />
-			<AcademicProjects className="print:hidden" />
-			<PersonalProjects className="print:hidden" />
 			<Skills className="print:hidden" />
-			<LanguageSkills className="print:hidden" />
 			<Education className="order-first" />
+			<VolunteerExperience className="print:col-span-3" />
+			<LanguageSkills className="print:hidden" />
 			<Interests className="order-first" />
 		</div>
 		<Tail />

@@ -2,7 +2,7 @@
   "basics": {
     "name": "Anas Uddin",
     "label": "Software Engineer",
-    "image": "/me_avatar.jpg",
+    "image": "/anas_uddin.jpg",
     "email": "anasuddin44@gmail.com",
     "phone": "+358 449509309",
     "url": "https://www.linkedin.com/in/theanasuddin",
@@ -254,11 +254,11 @@
     "Frontend & Web: HTML, CSS, JavaScript, TypeScript, Angular",
     "Databases & Reporting: MariaDB, PostgreSQL, SQL, JasperReports",
     "Messaging & Integration: RabbitMQ",
-    "Legacy Systems & Migration: PowerBuilder → modern Java web stack.",
+    "Legacy Systems & Migration: PowerBuilder → modern Java web stack",
     "Version Control & Project Management: Git, Jira",
     "Documentation & Collaboration: Confluence, Markdown",
     "Visual Arts: Processing",
-    "Strengths: Problem-solving, clean coding, modular design, debugging, and delivering maintainable solutions."
+    "Strengths: Problem-solving, clean coding, modular design, debugging, and delivering maintainable solutions"
   ],
   "skills": [
     {
@@ -360,6 +360,31 @@
       "name": "Processing",
       "level": "",
       "keywords": ["", ""]
+    },
+    {
+      "name": "IntelliJIDEA",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "Docker",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "Jenkins",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "VSCode",
+      "level": "",
+      "keywords": ["", ""]
+    },
+    {
+      "name": "Postman",
+      "level": "",
+      "keywords": ["", ""]
     }
   ],
   "languages": [
@@ -401,8 +426,9 @@
   "projects": [
     {
       "name": "Fikuro",
+      "category": "Professional",
       "isActive": true,
-      "description": "Delivered full-stack features for a robust ERP, enabling scalable operations and real-time reporting for SMEs.",
+      "description": "Delivered full-stack features for a robust ERP, enabling scalable operations and real-time reporting for SMEs in Finland.",
       "highlights": [
         "Built with: Java, Spring Boot, Angular, MariaDB, RabbitMQ, JasperReports, LaunchDarkly, Snowplow"
       ],
@@ -411,8 +437,9 @@
     },
     {
       "name": "Mealkun",
+      "category": "Professional",
       "isActive": true,
-      "description": "Migrated legacy system to modern web stack and added reporting features to streamline school meal management.",
+      "description": "Migrated legacy system to modern web stack and added reporting features to streamline school meal management in Japan.",
       "highlights": [
         "Built with: Java, Spring Boot, Angular, PostgreSQL, JasperReports, PowerBuilder"
       ],
@@ -421,6 +448,7 @@
     },
     {
       "name": "RIMS",
+      "category": "Professional",
       "isActive": true,
       "description": "Migrated a legacy PowerBuilder-based laboratory chemical management system to a modern web platform, enhancing usability, maintainability, and operational efficiency for chemical labs in Japan.",
       "highlights": [
@@ -428,11 +456,10 @@
       ],
       "url": "https://www.shinetsu.co.jp/en/",
       "github": ""
-    }
-  ],
-  "academicProjects": [
+    },
     {
       "name": "typeRage",
+      "category": "Academic",
       "isActive": true,
       "description": "Developed a web-based speed typing game consisting of 3 difficulty levels with a modern UI using web technologies to help players improve their typing speed and master the keyboard through fun, hosted on GitHub Pages.",
       "highlights": [
@@ -443,17 +470,18 @@
     },
     {
       "name": "Game AI Agent",
+      "category": "Academic",
       "isActive": false,
       "description": "Implemented a game AI agent using Deep reinforcement learning (deep RL) that learns how to play games from the environment with visionary input, trained with 50,000 episodes, good for single-player 2D games like Snake, Cartpole, etc.",
       "highlights": [
         "Built with: Python, PyGame"
       ],
-      "url": ""
-    }
-  ],
-  "personalProjects": [
+      "url": "",
+      "github": ""
+    },
     {
       "name": "Yahtzee™",
+      "category": "Personal",
       "isActive": true,
       "description": "Implemented a complete and self-contained single-player version of the classic probability dice game YahtzeeTM with Processing and OpenGL API, which allows the player to score for all 13 rounds found in the actual physical game.",
       "highlights": [
@@ -464,6 +492,7 @@
     },
     {
       "name": "Stationary Shop Management",
+      "category": "Personal",
       "isActive": true,
       "description": "Wrote a stationary shop management system with Java and Swing GUI widget toolkit API following Object-oriented programming (OOP) techniques that can help shopkeepers keep records of their product stocks by product enlisting, report viewing, keeping track of product purchase, sales to customers, etc.",
       "highlights": [
