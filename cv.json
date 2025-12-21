@@ -140,7 +140,9 @@
       "featuredWorks": [
         "Blog Post: <a href='https://blogs.tuni.fi/studentambassadors/tampere-university/from-dhaka-to-tampere-the-day-i-finally-said-yes-to-my-dream/' target='_blank' rel='noopener noreferrer'><em>From Dhaka to Tampere: The Day I Finally Said 'Yes' to My Dream</em></a><br>Published on the official <a href='https://blogs.tuni.fi/studentambassadors/' target='_blank' rel='noopener noreferrer'>Tampere University Student Ambassadors Blog</a><br><br>A personal narrative highlighting my journey from Dhaka to Tampere, written to inspire and guide prospective international students by sharing authentic insights into the challenges, emotions, and excitement of pursuing studies in Finland.",
 
-        "Blog Post: <a href='https://blogs.tuni.fi/studentambassadors/studentlife/a-love-letter-to-tampere/' target='_blank' rel='noopener noreferrer'><em>A Love Letter to Tampere</em></a><br>Published on the official <a href='https://blogs.tuni.fi/studentambassadors/' target='_blank' rel='noopener noreferrer'>Tampere University Student Ambassadors Blog</a><br><br>Co-authored with fellow ambassadors, this reflective blog post captures the essence of student life, personal growth, and cultural experiences in Tampere, providing authentic insights and inspiration for prospective students considering the university."
+        "Blog Post: <a href='https://blogs.tuni.fi/studentambassadors/studentlife/a-love-letter-to-tampere/' target='_blank' rel='noopener noreferrer'><em>A Love Letter to Tampere</em></a><br>Published on the official <a href='https://blogs.tuni.fi/studentambassadors/' target='_blank' rel='noopener noreferrer'>Tampere University Student Ambassadors Blog</a><br><br>Co-authored with fellow ambassadors, this reflective blog post captures the essence of student life, personal growth, and cultural experiences in Tampere, providing authentic insights and inspiration for prospective students considering the university.",
+
+        "Photo Carousel: <a href='https://www.instagram.com/tampereuni/p/DSaS-B0ir8X/' target='_blank' rel='noopener noreferrer'><em>Humans of TAU</em></a><br>Published on Tampere University's official <a href='https://www.instagram.com/tampereuni/' target='_blank' rel='noopener noreferrer'>Instagram</a><br><br>Humans of TAU is an Instagram photo carousel featuring students from diverse backgrounds at Tampere University, sharing honest reflections on why they chose TAU and what they've learned along the way. Through real voices and personal stories, it offers an authentic glimpse into student life, community, and learning beyond the classroom."
       ],
       "skills": [
         "Communication",
@@ -467,9 +469,7 @@
       "category": "Academic",
       "isActive": true,
       "description": "Developed a web-based speed typing game consisting of 3 difficulty levels with a modern UI using web technologies to help players improve their typing speed and master the keyboard through fun, hosted on GitHub Pages.",
-      "highlights": [
-        "Built with: HTML, CSS, Bootstrap, JavaScript, jQuery"
-      ],
+      "highlights": ["Built with: HTML, CSS, Bootstrap, JavaScript, jQuery"],
       "url": "https://theanasuddin.github.io/typeRage/",
       "github": "https://github.com/theanasuddin/typeRage"
     },
@@ -478,8 +478,17 @@
       "category": "Academic",
       "isActive": false,
       "description": "Implemented a game AI agent using Deep reinforcement learning (deep RL) that learns how to play games from the environment with visionary input, trained with 50,000 episodes, good for single-player 2D games like Snake, Cartpole, etc.",
+      "highlights": ["Built with: Python, PyGame"],
+      "url": "",
+      "github": ""
+    },
+    {
+      "name": "Smart Road Weather Dashboard",
+      "category": "Academic",
+      "isActive": false,
+      "description": "The Smart Road Weather Dashboard is a lightweight, web-based platform that combines real-time data from Digitraffic and the Finnish Meteorological Institute (FMI) to present live road, traffic, and weather conditions across Finland in one intuitive interface. Through interactive maps, live traffic cameras, weather forecasts, safety alerts, and historical analytics, it enables safer, smarter travel decisions.",
       "highlights": [
-        "Built with: Python, PyGame"
+        "Built with: React, Redux, Material UI, Recharts, Leaflet, Java Spring Boot, Docker, Digitraffic API, FMI API, Open-Meteo API"
       ],
       "url": "",
       "github": ""
@@ -489,9 +498,7 @@
       "category": "Personal",
       "isActive": true,
       "description": "Implemented a complete and self-contained single-player version of the classic probability dice game YahtzeeTM with Processing and OpenGL API, which allows the player to score for all 13 rounds found in the actual physical game.",
-      "highlights": [
-        "Built with: Processing, OpenGL"
-      ],
+      "highlights": ["Built with: Processing, OpenGL"],
       "url": "https://github.com/theanasuddin/Simplified-Version-of-Yahtzee/releases/tag/v1.0",
       "github": "https://github.com/theanasuddin/Simplified-Version-of-Yahtzee"
     },
@@ -500,9 +507,7 @@
       "category": "Personal",
       "isActive": true,
       "description": "Wrote a stationary shop management system with Java and Swing GUI widget toolkit API following Object-oriented programming (OOP) techniques that can help shopkeepers keep records of their product stocks by product enlisting, report viewing, keeping track of product purchase, sales to customers, etc.",
-      "highlights": [
-        "Built with: Java, Swing API, Apache Ant"
-      ],
+      "highlights": ["Built with: Java, Swing API, Apache Ant"],
       "url": "https://cutt.ly/rmkKuOs",
       "github": "https://github.com/theanasuddin/Stationary-Shop-Management"
     }
