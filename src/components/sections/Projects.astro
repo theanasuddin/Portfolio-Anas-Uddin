@@ -70,7 +70,7 @@ import { projects } from "@cv";
                     )}
                   </div>
 
-                  <p class="py-3 text-sm text-skin-base">{description}</p>
+                  <p class="py-3 text-sm text-skin-base" set:html={description} />
                   <ul class="mt-1 text-sm text-skin-muted">
                     {highlights.map((highlight) => (
                       <li>{highlight}</li>

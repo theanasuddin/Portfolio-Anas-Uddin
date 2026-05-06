@@ -493,6 +493,17 @@
       "github": ""
     },
     {
+      "name": "EduChat: Smart AI Tutor",
+      "category": "Academic",
+      "isActive": false,
+      "description": "EduChat is an AI enhanced learning support system integrated into Tampere University's Plussa LMS. It combines a Retrieval Augmented Generation (RAG) pipeline with an on premises Large Language Model (LLM) to deliver context aware assistance, conversational learning exercises and teacher oriented analytics.<br><br>Our team continued development on top of the existing EduChat codebase and delivered several major features during the Spring 2026 iteration. These included an improved Chat Exercise configuration workflow, the EduLens teacher dashboard with keyword analytics, public channel engagement metrics, a notification and email workflow, multi format file support, and multiple usability improvements across the system.<br><br>The project followed Scrum with six development sprints and a dedicated QA sprint. We expanded the automated test suite to around 500 test cases, improved frontend and backend stability, and ensured full integration with Plussa through LTI based authentication. The final system was deployed in the TUNI environment and validated through customer sprint reviews.<br><br>Team size: 6<br>My role: Test Manager responsible for test strategy, automated testing, documentation and feature development for public chat usability.",
+      "highlights": [
+        "Built with: React, TypeScript, Vite, Material UI, Chart.js, Recharts, Django, Python, Django REST Framework, Django Channels, PostgreSQL, pgvector, Docker, Docker Compose, GitLab, VS Code, Postman, Thunder Client, Jest, React Testing Library, Django Test Framework, ESLint, Prettier, flake8, pylint, TUNI on premises LLM service, LTI authentication, Plussa LMS infrastructure"
+      ],
+      "url": "",
+      "github": ""
+    },
+    {
       "name": "Smart Road Weather Dashboard",
       "category": "Academic",
       "isActive": false,
