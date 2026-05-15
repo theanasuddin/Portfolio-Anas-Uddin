@@ -52,13 +52,24 @@ interface Work {
 type DateStr = `${string}-${string}-${string}`;
 
 interface Volunteer {
-  organization: string;
+  name?: string;
+  organization?: string;
   position: string;
-  url: string;
+  url?: string;
+  location?: string;
+  location_type?: string;
+  certificate?: {
+    label: string;
+    url: string;
+  };
   startDate: DateStr;
-  endDate: DateStr;
-  summary: string;
-  highlights: Highlight;
+  endDate: DateStr | null;
+  summary?: string | Array<string>;
+  highlights?: Array<string>;
+  responsibilities?: Array<string>;
+  achievements?: Array<string>;
+  featuredWorks?: Array<string>;
+  skills?: Array<string>;
 }
 
 interface Skills {
