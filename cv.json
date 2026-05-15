@@ -37,6 +37,10 @@
       "location_type": "On site (Full-time)",
       "location": "Dhaka, Bangladesh",
       "url": "https://bjitgroup.com/",
+      "certificate": {
+        "label": "Experience Certificate",
+        "url": "/anas_uddin_experience_certificate_bjit.pdf"
+      },
       "startDate": "2021-10-01",
       "endDate": "2025-06-01",
       "summary": "As a full-stack software engineer at BJIT, I contributed to large-scale international projects for clients in Finland and Japan, focusing on ERP, education, and laboratory management systems. I specialized in system modernization, full-stack feature delivery, and building maintainable, scalable enterprise solutions using Java Spring Boot and Angular.",
@@ -81,6 +85,10 @@
       "location_type": "Hybrid (Part-time)",
       "location": "Dhaka, Bangladesh",
       "url": "https://denimventure-bd.com/",
+      "certificate": {
+        "label": "Experience Certificate",
+        "url": "/anas_uddin_experience_certificate_dvl.pdf"
+      },
       "startDate": "2021-03-01",
       "endDate": "2021-09-01",
       "summary": "At DVL Denim Ltd., I contributed to the company's digital infrastructure by developing both hardware-based and web-based solutions. My role combined hands-on system building, network optimization, and web development to improve data accessibility and online presence.",

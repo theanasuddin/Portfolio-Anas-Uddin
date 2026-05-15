@@ -42,6 +42,7 @@ import PowerBuilder from "@/icons/PowerBuilder.astro";
 import SQL from "@/icons/SQLFile.astro";
 import Angular from "@/icons/Angular.astro";
 import SpringFramework from "@/icons/SpringFramework.astro";
+import Arrow from "@/icons/Arrow.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -129,7 +130,7 @@ const SKILL_LABELS: Record<string, string> = {
 ---
 <Section className={Astro.props.className} title="Experience">
   <ul class="flex flex-col">
-    {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
+    {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type, certificate }) => {
       const formatDate = (date: string | number | Date) => {
         if (!date) return "Present";
         const d = new Date(date);
@@ -167,9 +168,26 @@ const SKILL_LABELS: Record<string, string> = {
                   </span>
                 </div>
               </h3>
-              {(location || location_type) && (
+              {(location || location_type || certificate) && (
                 <div class="text-xs text-skin-muted">
                   {location} {location && location_type && '-'} {location_type}
+                  {certificate && (
+                    <>
+                      <span class="px-1 text-skin-muted">&bull;</span>
+                      <a
+                        href={certificate.url}
+                        target="_blank"
+                        rel="noopener"
+                        title={`View ${certificate.label}`}
+                        class="certificate-link inline-flex items-center gap-[6px] text-xs decoration-dotted underline-offset-[5px] text-skin-muted transition-colors hover:text-skin-hue"
+                      >
+                        <span class="certificate-label">{certificate.label}</span>
+                        <span class="certificate-arrow inline-block text-skin-hue transition ease-linear">
+                          <Arrow class="w-3 h-3" />
+                        </span>
+                      </a>
+                    </>
+                  )}
                 </div>
               )}
               <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm" x-data="{ expanded: false }">
@@ -246,5 +264,13 @@ const SKILL_LABELS: Record<string, string> = {
 <style>
   li::marker {
     @apply text-skin-hue
+  }
+
+  .certificate-label:hover + .certificate-arrow {
+    transform: translate(0.125rem, -0.125rem);
+  }
+
+  .certificate-arrow {
+    transition: transform 0.2s ease;
   }
 </style>

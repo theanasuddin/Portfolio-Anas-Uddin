@@ -42,11 +42,20 @@ interface Profiles {
 interface Work {
   name: string;
   position: string;
-  url: string;
+  url?: string;
+  location?: string;
+  location_type?: string;
+  certificate?: {
+    label: string;
+    url: string;
+  };
   startDate: DateStr;
   endDate: DateStr | null;
-  summary: string;
-  highlights: Highlight;
+  summary?: string;
+  highlights?: Array<string>;
+  responsibilities?: Array<string>;
+  achievements?: Array<string>;
+  skills?: Array<string>;
 }
 
 type DateStr = `${string}-${string}-${string}`;
