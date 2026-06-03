@@ -238,6 +238,12 @@
   ],
   "certificates": [
     {
+      "name": "50% Tuition Fee Scholarship (Academic Year 2026-2027)",
+      "date": "2026-05-05",
+      "issuer": "Awarded a 50% tuition fee scholarship for the academic year 2026-2027 at Tampere University, granted based on academic performance by completing over 55 ECTS credits during the first year of the Master's Degree Programme.",
+      "url": "https://opiskelijanopas.tuni.fi/en/tampere-university/study-right-and-annual-enrolment/tuition-fees-and-scholarships/scholarships-fee-paying-students-admitted-2025-or-earlier"
+    },
+    {
       "name": "Best Performer of the Year",
       "date": "2024-06-01",
       "issuer": "Awarded “Best Performer of the Year” (2023-2024) for outstanding professional contribution at BJIT Ltd.",
