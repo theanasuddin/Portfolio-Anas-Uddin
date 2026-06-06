@@ -486,7 +486,10 @@
     { "name": "Style" },
     { "name": "Technology" },
     { "name": "Programming" },
-    { "name": "Photography" },
+    {
+      "name": "Photography",
+      "url": "https://anas-uddin-photography.vercel.app/"
+    },
     { "name": "Music" },
     { "name": "Study" }
   ],
