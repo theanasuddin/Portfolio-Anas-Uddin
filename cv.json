@@ -7,7 +7,7 @@
     "phone": "+358 449509309",
     "url": "https://www.linkedin.com/in/theanasuddin",
     "cv": "/anas_uddin_cv.pdf",
-    "summary": "Hi, I'm Anas Uddin, a software engineer and MSc Data Science (minor in Software, Web & Cloud Technologies) student at Tampere University. I'm passionate about building elegant, scalable, and meaningful digital solutions. Over the past four years, I've worked on enterprise-level projects for clients in Finland and Japan, delivering high-performing, maintainable systems using Java, Spring Boot, Angular, and modern web technologies.\n\nBeyond code, I'm deeply interested in design, aesthetics, and how technology can blend function with form, whether it's crafting clean architectures, intuitive interfaces, or visually balanced experiences. My approach to software engineering is driven by problem-solving, precision, and continuous learning, from debugging legacy systems to optimizing data-driven solutions.\n\nI'm now expanding my expertise at the intersection of software engineering and data science, aiming to create intelligent, human-centered systems that not only work efficiently but also feel intuitively right.",
+    "summary": "Hi, I'm Anas Uddin, a software engineer and MSc Data Science (minor in Software, Web & Cloud Technologies) student at Tampere University. I'm passionate about building elegant, scalable, and meaningful digital solutions. Over the past four years, I've worked on enterprise-level projects for clients in Finland and Japan, delivering high-performing, maintainable systems using Java, Spring Boot, Angular, and modern web technologies.\n\nAlongside my studies, I currently work as a Research Assistant at Tampere University, where I contribute to research in database systems and data-driven computing.\n\nBeyond code, I'm deeply interested in design, aesthetics, and how technology can blend function with form, whether it's crafting clean architectures, intuitive interfaces, or visually balanced experiences. My approach to software engineering is driven by problem-solving, precision, and continuous learning, from debugging legacy systems to optimizing data-driven solutions.\n\nI'm now expanding my expertise at the intersection of software engineering and data science, aiming to create intelligent, human-centered systems that not only work efficiently but also feel intuitively right.",
     "theme": "default",
     "location": {
       "address": "",
@@ -31,6 +31,42 @@
     ]
   },
   "work": [
+    {
+      "name": "Tampere University",
+      "position": "Research Assistant",
+      "location_type": "On site (Full-time)",
+      "location": "Tampere, Finland",
+      "url": "https://www.tuni.fi/en",
+      "certificate": {
+        "label": "Database Systems Research Group",
+        "url": "https://dbs-research.github.io/"
+      },
+      "startDate": "2026-05-15",
+      "endDate": null,
+      "summary": "Research Assistant in the <a href='https://www.tuni.fi/en/tau/research/scaling-ev-charging-solutions-new-values-and-services-collaboration-networks-secha' target='_blank' rel='noopener noreferrer'>SECHA</a> (Scaling EV Charging Solutions for New Values and Services in Collaboration Networks) project, a €4M <a href='https://www.businessfinland.fi/en/' target='_blank' rel='noopener noreferrer'>Business Finland</a> Co-Innovation initiative coordinated by <a href='https://www.tuni.fi/en' target='_blank' rel='noopener noreferrer'>Tampere University</a> in collaboration with <a href='https://www.vttresearch.com/en' target='_blank' rel='noopener noreferrer'>VTT</a> and <a href='https://www.lut.fi/en' target='_blank' rel='noopener noreferrer'>LUT University</a>. The project focuses on enabling scalable, intelligent, and interoperable EV charging ecosystems by integrating heterogeneous data sources across industrial and grid partners.<br><br>My work focuses on EV charging data interoperability, where I contribute to designing and prototyping data integration frameworks that unify diverse partner systems into a coherent, scalable data platform. The role combines applied research and systems engineering, with an emphasis on energy-efficient data management, interoperability standards, and real-world data pipeline design within smart energy ecosystems.",
+      "highlights": [
+        "Research Assistant in the <a href='https://www.tuni.fi/en/tau/research/scaling-ev-charging-solutions-new-values-and-services-collaboration-networks-secha' target='_blank' rel='noopener noreferrer'>SECHA</a> (Scaling EV Charging Solutions for New Values and Services in Collaboration Networks) project, a €4M <a href='https://www.businessfinland.fi/en/' target='_blank' rel='noopener noreferrer'>Business Finland</a> Co-Innovation initiative coordinated by <a href='https://www.tuni.fi/en' target='_blank' rel='noopener noreferrer'>Tampere University</a> in collaboration with <a href='https://www.vttresearch.com/en' target='_blank' rel='noopener noreferrer'>VTT</a> and <a href='https://www.lut.fi/en' target='_blank' rel='noopener noreferrer'>LUT University</a>. The project focuses on enabling scalable, intelligent, and interoperable EV charging ecosystems by integrating heterogeneous data sources across industrial and grid partners.<br><br>My work focuses on EV charging data interoperability, where I contribute to designing and prototyping data integration frameworks that unify diverse partner systems into a coherent, scalable data platform. The role combines applied research and systems engineering, with an emphasis on energy-efficient data management, interoperability standards, and real-world data pipeline design within smart energy ecosystems."
+      ],
+      "responsibilities": [
+        "Conduct research on EV charging data ecosystems, focusing on interoperability challenges across heterogeneous industrial and grid data sources.",
+        "Analyze and map diverse data formats, schemas, and system architectures used by <a href='https://www.tuni.fi/en/tau/research/scaling-ev-charging-solutions-new-values-and-services-collaboration-networks-secha' target='_blank' rel='noopener noreferrer'>SECHA</a> consortium partners, including companies and energy providers.",
+        "Design and develop a proof-of-concept data pipeline to ingest, transform, and standardize EV charging data into a unified platform.",
+        "Contribute to the development of a reference interoperability framework for EV charging data exchange across stakeholders in the energy ecosystem.",
+        "Collaborate with the <a href='https://dbs-research.github.io/' target='_blank' rel='noopener noreferrer'>Database Systems Research Group</a> (<a href='https://www.tuni.fi/en' target='_blank' rel='noopener noreferrer'>Tampere University</a>) on data-intensive system design, energy-efficient data management, and scalable pipeline architectures.",
+        "Engage with research and industry stakeholders within the <a href='https://www.tuni.fi/en/tau/research/scaling-ev-charging-solutions-new-values-and-services-collaboration-networks-secha' target='_blank' rel='noopener noreferrer'>SECHA</a> consortium to align technical solutions with real-world energy and mobility use cases.",
+        "Support research outputs, including technical documentation, thesis work, and potential academic publications."
+      ],
+      "skills": [
+        "Link",
+        "Flow",
+        "Globe",
+        "Database",
+        "Cog",
+        "Bolt",
+        "Microscope",
+        "Doc"
+      ]
+    },
     {
       "name": "BJIT Ltd.",
       "position": "Software Engineer",

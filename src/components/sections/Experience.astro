@@ -43,6 +43,14 @@ import SQL from "@/icons/SQLFile.astro";
 import Angular from "@/icons/Angular.astro";
 import SpringFramework from "@/icons/SpringFramework.astro";
 import Arrow from "@/icons/Arrow.astro";
+import Link from "@/icons/Link.astro"
+import Flow from "@/icons/Flow.astro"
+import Globe from "@/icons/Globe.astro"
+import Database from "@/icons/Database.astro"
+import Cog from "@/icons/Cog.astro"
+import Doc from "@/icons/Doc.astro"
+import Microscope from "@/icons/Microscope.astro"
+import Bolt from "@/icons/Bolt.astro"
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -84,6 +92,14 @@ const SKILLS_ICONS: Record<string, any> = {
   SQL,
   Angular,
   SpringFramework,
+  Link,
+  Flow,
+  Globe,
+  Database,
+  Cog,
+  Bolt,
+  Microscope,
+  Doc,
 }
 
 const SKILL_LABELS: Record<string, string> = {
@@ -125,7 +141,15 @@ const SKILL_LABELS: Record<string, string> = {
   PowerBuilder: "PowerBuilder",
   SQL: "SQL",
   Angular: "Angular",
-  SpringFramework: "Spring"
+  SpringFramework: "Spring",
+  Link: "Data Interoperability & Data Integration",
+  Flow: "Data Engineering (ETL / ELT Pipelines)",
+  Globe: "Distributed Data Systems & Architecture Mapping",
+  Database: "Database Systems & Data Modeling",
+  Cog: "API Design & System Integration",
+  Bolt: "Smart Energy Systems & EV Charging Infrastructure",
+  Microscope: "Research Methods in Data-Intensive Systems",
+  Doc: "Technical Documentation & Academic Writing",
 }
 ---
 <Section className={Astro.props.className} title="Experience">
@@ -194,13 +218,13 @@ const SKILL_LABELS: Record<string, string> = {
                 {summary && (
                   <div class="flex flex-col gap-1">
                     <h4>Summary:</h4>
-                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                    <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2 [&>li>a]:text-skin-hue [&>li>a:hover]:text-skin-hue/80">
                       {Array.isArray(summary) ? (
                         summary.map(item => (
                           {item}
                         ))
                       ) : (
-                        <li>{summary}</li>
+                        <li set:html={summary}></li>
                       )}
                     </ul>
                   </div>
