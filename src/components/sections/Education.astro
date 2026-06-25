@@ -3,13 +3,29 @@ import Section from "../Section.astro";
 
 import { education } from "@cv";
 import { certificates } from "@cv";
+import { fetchCompletedEcts } from "@/lib/koski";
+
+// Build-time fetch of completed ECTS so the value is present in the static HTML
+// (works with no JavaScript, in print/PDF, and avoids layout shift). A client
+// script later refreshes it from the cached /api/credits.json endpoint for
+// liveness between deploys. If the fetch fails the build still succeeds and the
+// client script fills the value in.
+let completedEcts: number | null = null;
+try {
+  completedEcts = await fetchCompletedEcts();
+} catch (error) {
+  console.warn("[koski] Build-time ECTS fetch failed; relying on client refresh.", error);
+}
+
+const formatEcts = (completed: number, total: number) =>
+  `, ${completed}/${total} ECTS cr`;
 ---
 
 <Section className={Astro.props.className} title="Education">
   <ul class="space-y-4 py-3 print:space-y-0">
     {
       education.map(
-        ({ institution, startDate, endDate, area, url, location }) => {
+        ({ institution, startDate, endDate, area, url, location, liveEcts }) => {
           const formatDate = (date: string | number | Date) => {
             if (!date) return "Present";
             const d = new Date(date);
@@ -72,7 +88,16 @@ import { certificates } from "@cv";
                   )}
                 </div>
                 <div class="flex items-center justify-between text-sm text-skin-muted">
-                  <div>{area}</div>
+                  <div>
+                    {area}
+                    {liveEcts && (
+                      <span data-live-ects data-ects-total={liveEcts.total}>
+                        {completedEcts !== null
+                          ? formatEcts(completedEcts, liveEcts.total)
+                          : ""}
+                      </span>
+                    )}
+                  </div>
                   <time>{years}</time>
                 </div>
               </div>
@@ -160,3 +185,32 @@ import { certificates } from "@cv";
     )
   }
 </Section>
+
+<script>
+  // Progressive enhancement: refresh the completed-ECTS figure from the cached
+  // serverless endpoint so it stays live between deploys. Falls back silently to
+  // the build-time value if the request fails. The secret Koski URL is never
+  // touched here — only our own /api/credits.json proxy is called.
+  (async () => {
+    const targets = document.querySelectorAll<HTMLElement>("[data-live-ects]");
+    if (targets.length === 0) return;
+
+    try {
+      const response = await fetch("/api/credits.json");
+      if (!response.ok) return;
+
+      const { completedEcts } = (await response.json()) as {
+        completedEcts: number | null;
+      };
+      if (completedEcts === null || completedEcts === undefined) return;
+
+      targets.forEach((el) => {
+        const total = el.dataset.ectsTotal;
+        if (!total) return;
+        el.textContent = `, ${completedEcts}/${total} ECTS cr`;
+      });
+    } catch {
+      // Keep the build-time value on any network/parse error.
+    }
+  })();
+</script>

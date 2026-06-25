@@ -227,7 +227,10 @@
       "endDate": null,
       "score": "",
       "courses": [],
-      "location": "Tampere, Finland"
+      "location": "Tampere, Finland",
+      "liveEcts": {
+        "total": 120
+      }
     },
     {
       "institution": "North South University",

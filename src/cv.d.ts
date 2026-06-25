@@ -118,6 +118,14 @@ interface Education {
   endDate: DateStr;
   score: string;
   courses: Array<string>;
+  location?: string;
+  /**
+   * When present, the completed ECTS credits for this degree are fetched live
+   * from Koski and rendered as ", {completed}/{total} ECTS cr" after the area.
+   */
+  liveEcts?: {
+    total: number;
+  };
 }
 
 interface Languages {
