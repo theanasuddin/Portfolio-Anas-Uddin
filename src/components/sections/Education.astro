@@ -89,13 +89,8 @@ const formatEcts = (completed: number, total: number) =>
                 </div>
                 <div class="flex items-center justify-between text-sm text-skin-muted">
                   <div>
-                    {area}
-                    {liveEcts && (
-                      <span data-live-ects data-ects-total={liveEcts.total}>
-                        {completedEcts !== null
-                          ? formatEcts(completedEcts, liveEcts.total)
-                          : ""}
-                      </span>
+                    {area}{liveEcts && (
+                      <span data-live-ects data-ects-total={liveEcts.total}>{completedEcts !== null ? formatEcts(completedEcts, liveEcts.total) : ""}</span>
                     )}
                   </div>
                   <time>{years}</time>
