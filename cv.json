@@ -582,7 +582,7 @@
       "name": "Yahtzee™",
       "category": "Personal",
       "isActive": true,
-      "description": "Implemented a complete and self-contained single-player version of the classic probability dice game YahtzeeTM with Processing and OpenGL API, which allows the player to score for all 13 rounds found in the actual physical game.",
+      "description": "Implemented a complete and self-contained single-player version of the classic probability dice game Yahtzee™ with Processing and OpenGL API, which allows the player to score for all 13 rounds found in the actual physical game.",
       "highlights": ["Built with: Processing, OpenGL"],
       "url": "https://github.com/theanasuddin/Simplified-Version-of-Yahtzee/releases/tag/v1.0",
       "github": "https://github.com/theanasuddin/Simplified-Version-of-Yahtzee"
@@ -595,6 +595,15 @@
       "highlights": ["Built with: Java, Swing API, Apache Ant"],
       "url": "https://cutt.ly/rmkKuOs",
       "github": "https://github.com/theanasuddin/Stationary-Shop-Management"
+    },
+    {
+      "name": "Cannon Craze",
+      "category": "Personal",
+      "isActive": true,
+      "description": "A minimal neon-noir arcade cannon game. Pull, aim, release. Built with Processing, for desktop and Android.",
+      "highlights": ["Built with: Processing, Java"],
+      "url": "https://cannoncraze.vercel.app/",
+      "github": "https://github.com/theanasuddin/CannonCraze"
     }
   ]
 }
