@@ -604,6 +604,15 @@
       "highlights": ["Built with: Processing, Java"],
       "url": "https://cannoncraze.vercel.app/",
       "github": "https://github.com/theanasuddin/CannonCraze"
+    },
+    {
+      "name": "AI Profile Assistant",
+      "category": "Personal",
+      "isActive": true,
+      "description": "It's an AI-powered personal assistant that enables natural conversations about a person's profile using the Google Gemini API. The application grounds responses in curated profile context, delivering accurate, context-aware answers while minimizing hallucinations. It demonstrates practical integration of Large Language Models (LLMs) with modern web technologies to build an intelligent, responsive conversational experience.",
+      "highlights": ["Built with: Google Gemini API, LLMs"],
+      "url": "https://anas-uddin-ai.vercel.app/",
+      "github": "https://github.com/theanasuddin/Gemini-Context-Guard"
     }
   ]
 }
