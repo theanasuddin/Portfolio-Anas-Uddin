@@ -4,7 +4,7 @@ import "hotkeypad/index.css";
 import { type SocialIcon } from "@/types";
 import { basics } from "@cv";
 
-const { profiles } = basics;
+const { profiles, aiAssistant } = basics;
 
 const SOCIAL_ICONS: SocialIcon = {
 	GitHub: `<svg
@@ -71,7 +71,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 	</svg>
 </div>
 
-<div id="hotkeypad" data-placeholder="Search Command" data-info={JSON.stringify(profilesInfo)}></div>
+<div id="hotkeypad" data-placeholder="Search Command" data-info={JSON.stringify(profilesInfo)} data-ai-assistant={aiAssistant}></div>
 
 <script>
 	interface Info {
@@ -89,6 +89,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 	const hotkeypad = new HotKeyPad();
 	const info = hotkeypad.instance.getAttribute("data-info") ?? "[]";
 	const parsedInfo = JSON.parse(info) as Info[];
+	const aiAssistantUrl = hotkeypad.instance.getAttribute("data-ai-assistant") ?? "#";
 
 	const data = parsedInfo.map(({ url, hotkey, icon, id, section, title }) => {
 		return {
@@ -103,6 +104,16 @@ const profilesInfo = profiles.map(({ network, url }) => {
 		};
 	});
 	hotkeypad.setCommands([
+		{
+			id: "ai-profile",
+			title: "AI Profile Assistant",
+			icon: `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 64 64" fill="currentColor" role="img"><title>AI Profile Assistant</title><mask id="ai-profile-au-modal"><rect width="64" height="64" rx="14" fill="#fff"></rect><text x="32" y="42" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#000">AU</text></mask><rect width="64" height="64" rx="14" fill="currentColor" mask="url(#ai-profile-au-modal)"></rect></svg>`,
+			hotkey: "ctrl+I",
+			section: "Actions",
+			handler: () => {
+				window.open(aiAssistantUrl, "_blank");
+			},
+		},
 		{
 			id: "print",
 			title: "Download CV",

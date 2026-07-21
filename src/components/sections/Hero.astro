@@ -9,9 +9,10 @@ import GitHub from "@/icons/GitHub.astro";
 import Flag from "@/icons/Flag.astro";
 import MapMarker from "@/icons/MapMarker.astro";
 import CV from "@/icons/CV.astro";
+import AIProfile from "@/icons/AIProfile.astro";
 import type { SocialIcon } from "@/types";
 
-const { name, label, image, location, profiles, phone, email, cv } = basics;
+const { name, label, image, location, profiles, phone, email, cv, aiAssistant } = basics;
 const { city, region, nationality } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
@@ -29,7 +30,16 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 <Section>
 	<div class="flex flex-col-reverse gap-8">
 		<div class="info">
-			<h1>{name}</h1>
+			<div class="flex items-center gap-2">
+				<h1>{name}</h1>
+				{
+					aiAssistant && (
+						<a class="ai-assistant no-print" href={aiAssistant} title={`Chat with ${name}'s AI Profile Assistant`} target="_blank" rel="noopener noreferrer">
+							<AIProfile />
+						</a>
+					)
+				}
+			</div>
 			<h2>{label}</h2>
 			<div class="flex items-center gap-2 pt-2 text-sm text-skin-muted">
 				<MapMarker />
@@ -134,6 +144,10 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 	}
 
 	footer a, footer button {
+		@apply inline-flex size-8 items-center justify-center rounded-md p-1 transition-all duration-500 ease-linear text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted;
+	}
+
+	.ai-assistant {
 		@apply inline-flex size-8 items-center justify-center rounded-md p-1 transition-all duration-500 ease-linear text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted;
 	}
 
