@@ -104,6 +104,18 @@ const { image, summary, url, theme } = basics;
 				@apply !bg-zinc-800 !opacity-80;
 			}
 
+			/* Center each command's icon within its fixed-size slot so it lines up
+			   vertically with the label text, and drop the stray inline margin some
+			   icons carry so every row aligns identically. */
+			#hotkeypad [data-hotkey] > span {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#hotkeypad [data-hotkey] > span > svg {
+				margin: 0 !important;
+			}
+
 			@media print {
 				.no-print {
 					display: none !important;

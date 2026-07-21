@@ -3,24 +3,101 @@ import Theme from "@/icons/themeSwitch.astro";
 ---
 
 <div class="no-print inline-flex items-center">
-	<!-- <div class="flex items-center gap-1">
-		<Theme />
-		<select name="themeSwitch" id="themeSwitch" class="block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 dark:text-gray-100 dark:ring-gray-700 sm:text-sm sm:leading-6">
+	<div
+		x-data="{
+			open: false,
+			value: 'system',
+			options: [
+				{ value: 'system', label: 'System' },
+				{ value: 'dark', label: 'Dark' },
+				{ value: 'light', label: 'Light' }
+			],
+			init() {
+				const stored = localStorage.getItem('theme');
+				this.value = stored
+					? stored
+					: (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+				const sel = document.getElementById('themeSwitch');
+				if (sel) sel.addEventListener('change', () => { this.value = sel.value; });
+			},
+			choose(v) {
+				this.value = v;
+				this.open = false;
+				const sel = document.getElementById('themeSwitch');
+				if (sel) { sel.value = v; sel.dispatchEvent(new Event('change')); }
+			}
+		}"
+		@keydown.escape.window="open = false"
+		@click.outside="open = false"
+		class="group/theme relative inline-flex"
+	>
+		<!-- Hidden native control kept in the DOM so the existing theme scripts keep working. -->
+		<select id="themeSwitch" name="themeSwitch" tabindex="-1" aria-hidden="true" class="sr-only">
 			<option value="system">System</option>
 			<option value="dark">Dark</option>
 			<option value="light">Light</option>
 		</select>
-	</div> -->
 
-  <!-- test deploy -->
+		<button
+			type="button"
+			@click="open = !open"
+			:aria-expanded="open"
+			aria-haspopup="listbox"
+			aria-label="Switch theme"
+			class="flex items-center gap-2 rounded-md bg-skin-button-muted px-3 py-1.5 text-sm font-medium text-skin-base ring-1 ring-inset ring-skin-muted transition-colors duration-200 hover:ring-skin-hue focus:outline-none focus-visible:ring-2 focus-visible:ring-skin-hue"
+		>
+			<span class="inline-flex transition-transform duration-300 ease-in-out group-hover/theme:rotate-45 [&>svg]:size-4"><Theme /></span>
+			<span class="min-w-[3.5rem] text-left" x-text="options.find((o) => o.value === value)?.label || 'System'">System</span>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="size-4 text-skin-muted transition-transform duration-200"
+				:class="open ? '-rotate-180' : ''"
+				><path d="m6 9 6 6 6-6"></path></svg
+			>
+		</button>
 
-	<div class="group/theme flex items-center gap-2">
-		<label for="themeSwitch" class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45"> <Theme /></label>
-		<select id="themeSwitch" name="themeSwitch" class="focus:ring-skin-hue ring-skin-muted block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset focus:ring-2 sm:text-sm sm:leading-6">
-			<option value="system">System</option>
-			<option value="dark">Dark</option>
-			<option value="light">Light</option>
-		</select>
+		<ul
+			x-show="open"
+			style="display: none;"
+			role="listbox"
+			x-transition:enter="transition ease-out duration-150"
+			x-transition:enter-start="opacity-0 -translate-y-1"
+			x-transition:enter-end="opacity-100 translate-y-0"
+			x-transition:leave="transition ease-in duration-100"
+			x-transition:leave-start="opacity-100 translate-y-0"
+			x-transition:leave-end="opacity-0 -translate-y-1"
+			class="absolute left-0 top-full z-30 mt-2 min-w-full overflow-hidden rounded-md bg-skin-fill p-1 shadow-lg ring-1 ring-skin-muted"
+		>
+			<template x-for="opt in options" :key="opt.value">
+				<li
+					role="option"
+					:aria-selected="opt.value === value"
+					@click="choose(opt.value)"
+					class="flex cursor-pointer items-center justify-between gap-4 rounded px-3 py-1.5 text-sm text-skin-base transition-colors duration-150 hover:bg-skin-button-accent hover:text-skin-inverted"
+					:class="opt.value === value ? 'font-medium text-skin-hue' : ''"
+				>
+					<span x-text="opt.label"></span>
+					<svg
+						x-show="opt.value === value"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="size-3.5"
+						><path d="M20 6 9 17l-5-5"></path></svg
+					>
+				</li>
+			</template>
+		</ul>
 	</div>
 
 	<style>
