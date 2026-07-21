@@ -4,29 +4,7 @@ import Theme from "@/icons/themeSwitch.astro";
 
 <div class="no-print inline-flex items-center">
 	<div
-		x-data="{
-			open: false,
-			value: 'system',
-			options: [
-				{ value: 'system', label: 'System' },
-				{ value: 'dark', label: 'Dark' },
-				{ value: 'light', label: 'Light' }
-			],
-			init() {
-				const stored = localStorage.getItem('theme');
-				this.value = stored
-					? stored
-					: (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-				const sel = document.getElementById('themeSwitch');
-				if (sel) sel.addEventListener('change', () => { this.value = sel.value; });
-			},
-			choose(v) {
-				this.value = v;
-				this.open = false;
-				const sel = document.getElementById('themeSwitch');
-				if (sel) { sel.value = v; sel.dispatchEvent(new Event('change')); }
-			}
-		}"
+		x-data="themeDropdown"
 		@keydown.escape.window="open = false"
 		@click.outside="open = false"
 		class="group/theme relative inline-flex"
@@ -47,7 +25,7 @@ import Theme from "@/icons/themeSwitch.astro";
 			class="flex items-center gap-2 rounded-md bg-skin-button-muted px-3 py-1.5 text-sm font-medium text-skin-base ring-1 ring-inset ring-skin-muted transition-colors duration-200 hover:ring-skin-hue focus:outline-none focus-visible:ring-2 focus-visible:ring-skin-hue"
 		>
 			<span class="inline-flex transition-transform duration-300 ease-in-out group-hover/theme:rotate-45 [&>svg]:size-4"><Theme /></span>
-			<span class="min-w-[3.5rem] text-left" x-text="options.find((o) => o.value === value)?.label || 'System'">System</span>
+			<span class="min-w-[3.5rem] text-left" x-text="label">System</span>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
@@ -107,15 +85,12 @@ import Theme from "@/icons/themeSwitch.astro";
 	</style>
 
 	<script>
+		// Apply the saved/system theme on load and keep <html> + storage in sync.
 		const select = document.getElementById("themeSwitch") as HTMLSelectElement;
-		const theme = localStorage.getItem("theme");
+		const storedTheme = localStorage.getItem("theme");
 		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
-		if (theme !== null) {
-			select.value = theme;
-		} else {
-			select.value = systemTheme;
-		}
+		select.value = storedTheme !== null ? storedTheme : systemTheme;
 
 		function updateTheme(value: string) {
 			const theme = value === "system" ? systemTheme : value;
@@ -127,8 +102,38 @@ import Theme from "@/icons/themeSwitch.astro";
 		updateTheme(select.value);
 
 		select.addEventListener("change", (event: Event) => {
-			const select = event.target as HTMLSelectElement;
-			updateTheme(select.value);
+			const target = event.target as HTMLSelectElement;
+			updateTheme(target.value);
+		});
+
+		// Register the custom dropdown as an Alpine component so the markup stays declarative.
+		type ThemeOption = { value: string; label: string };
+		document.addEventListener("alpine:init", () => {
+			(window as any).Alpine.data("themeDropdown", () => ({
+				open: false,
+				value: select.value,
+				options: [
+					{ value: "system", label: "System" },
+					{ value: "dark", label: "Dark" },
+					{ value: "light", label: "Light" },
+				] as ThemeOption[],
+				get label(): string {
+					const match = this.options.find((o: ThemeOption) => o.value === this.value);
+					return match ? match.label : "System";
+				},
+				init() {
+					this.value = storedTheme !== null ? storedTheme : systemTheme;
+					select.addEventListener("change", () => {
+						this.value = select.value;
+					});
+				},
+				choose(value: string) {
+					this.value = value;
+					this.open = false;
+					select.value = value;
+					select.dispatchEvent(new Event("change"));
+				},
+			}));
 		});
 	</script>
 </div>
