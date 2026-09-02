@@ -10,6 +10,9 @@ import WorldMap from "@/icons/WorldMap.astro"
 import Team from "@/icons/Team.astro"
 import Rocket from "@/icons/Rocket.astro"
 import Arrow from "@/icons/Arrow.astro"
+import EventManagement from "@/icons/EventManagement.astro"
+import EventCoordination from "@/icons/EventCoordination.astro"
+import TechnicalSupport from "@/icons/TechnicalSupport.astro"
 
 const SKILLS_ICONS: Record<string, any> = {
   Communication,
@@ -18,7 +21,10 @@ const SKILLS_ICONS: Record<string, any> = {
   CommunityEngagement,
   WorldMap,
   Team,
-  Rocket
+  Rocket,
+  EventManagement,
+  EventCoordination,
+  TechnicalSupport,
   
 }
 
@@ -29,7 +35,10 @@ const SKILL_LABELS: Record<string, string> = {
   CommunityEngagement: "Community Engagement",
   WorldMap: "Cross-Cultural Communication",
   Team: "Collaboration & Teamwork",
-  Rocket: "Leadership & Initiative"
+  Rocket: "Leadership & Initiative",
+  EventManagement: "Event Management",
+  EventCoordination: "Event Coordination",
+  TechnicalSupport: "Technical Support"
 }
 ---
 <Section className={Astro.props.className} title="Volunteer Experience">
