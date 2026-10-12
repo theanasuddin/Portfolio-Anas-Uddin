@@ -6,6 +6,8 @@ import Phone from "@/icons/Phone.astro";
 import X from "@/icons/X.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
+import GoogleScholar from "@/icons/GoogleScholar.astro";
+import ORCID from "@/icons/ORCID.astro";
 import Flag from "@/icons/Flag.astro";
 import MapMarker from "@/icons/MapMarker.astro";
 import CV from "@/icons/CV.astro";
@@ -19,6 +21,8 @@ const SOCIAL_ICONS: SocialIcon = {
 	GitHub,
 	LinkedIn,
 	X,
+	"Google Scholar": GoogleScholar,
+	ORCID,
 };
 
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
@@ -140,7 +144,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 	}
 
 	footer {
-		@apply mt-2 flex gap-1 text-sm ;
+		@apply mt-2 flex flex-wrap gap-1 text-sm ;
 	}
 
 	footer a, footer button {
