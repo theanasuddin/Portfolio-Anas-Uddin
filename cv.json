@@ -365,6 +365,12 @@
   ],
   "certificates": [
     {
+      "name": "Tampere University International Advancement Scholarship",
+      "date": "2026-10-01",
+      "issuer": "Received a €1,500 scholarship from Tampere University for completing at least 60 ECTS credits during the first academic year of my MSc in Data Science, recognising strong academic progress.",
+      "url": "https://opiskelijanopas.tuni.fi/en/tampere-university/study-right-and-annual-enrolment/tuition-fees-and-scholarships/scholarships-fee-paying-students-admitted-2025-or-earlier"
+    },
+    {
       "name": "50% Tuition Fee Scholarship (Academic Year 2026-2027)",
       "date": "2026-05-05",
       "issuer": "Awarded a 50% tuition fee scholarship for the academic year 2026-2027 at Tampere University, granted based on academic performance by completing over 55 ECTS credits during the first year of the Master's Degree Programme.",
@@ -562,7 +568,7 @@
     },
     {
       "language": "Finnish",
-      "fluency": "Elementary - CEFR A2.1 Limited Working Proficiency"
+      "fluency": "Elementary - CEFR A2.2 Functional Elementary Proficiency"
     },
     {
       "language": "Hindi",
